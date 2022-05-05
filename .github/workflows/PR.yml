@@ -31,8 +31,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Custom action from same repo
         id: custom-github-action-same-repo
-        uses: ./.github/greeting
-        with:
-          who-to-greet: 'Shibu'
+        uses: ./.github/actions/greeting
 
    
