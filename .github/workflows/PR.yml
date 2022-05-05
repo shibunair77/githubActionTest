@@ -16,7 +16,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - uses: shibunair77/GitHubActions@main
-      - uses: /.github/actions/greeting@main
+      - uses: ./.github/actions/greeting
         with:
           who-to-greet: 'Shibu'
 
