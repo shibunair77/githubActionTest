@@ -27,7 +27,11 @@ jobs:
     needs: job11
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:        
+    steps:
+      - name: Checkout
+        id: code-Checkout
+        uses: actions/checkout@v2
+        
       - name: Custom action from same repo
         id: custom-github-action-same-repo
         uses: "./.github/actions/greeting"
