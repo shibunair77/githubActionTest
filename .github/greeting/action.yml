@@ -1,0 +1,11 @@
+name: "greeting"
+description: "Greeting"
+inputs:
+  who-to-greet: # id of input
+    description: "Provide your name"
+    required: true
+    default: "SomeOne"
+runs:
+  steps:
+    - run: echo Hello ${{ inputs.who-to-greet }}.
+      shell: bash
