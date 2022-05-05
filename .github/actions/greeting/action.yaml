@@ -1,0 +1,8 @@
+name: "greeting"
+description: "Greeting"
+
+runs:
+  steps:
+    - run: echo "Hello there ;)."
+      shell: bash
+      
