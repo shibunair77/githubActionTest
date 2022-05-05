@@ -29,6 +29,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v2
+      - run: |
+          ls -l
       - name: Custom action from same repo
         id: custom-github-action-same-repo
         uses: ./.github/actions/greeting
