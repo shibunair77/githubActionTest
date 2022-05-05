@@ -34,7 +34,7 @@ jobs:
         
       - name: Custom action from same repo
         id: custom-github-action-same-repo
-        uses: "./.github/greeting"
+        uses: shibunair77/githuActionTest/.github/greeting@main
         with:
           who-to-greet: 'Shibu'
 
