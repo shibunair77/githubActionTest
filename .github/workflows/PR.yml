@@ -30,7 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          ls -al
+          ls -al /home/runner/work/githubActionTest/githubActionTest/./.github/actions/greeting
       - name: Custom action from same repo
         id: custom-github-action-same-repo
         uses: ./.github/actions/greeting
