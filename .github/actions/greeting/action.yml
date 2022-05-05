@@ -1,4 +1,4 @@
-name: "Greeting"
+name: "greeting"
 description: "Greeting"
 inputs:
   who-to-greet: # id of input
