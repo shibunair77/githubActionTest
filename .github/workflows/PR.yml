@@ -28,13 +28,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout
-        id: code-Checkout
-        uses: actions/checkout@v2
-        
+      - uses: actions/checkout@v2
       - name: Custom action from same repo
         id: custom-github-action-same-repo
-        uses: shibunair77/githubActionTest/.github/greeting@main
+        uses: ./.github/greeting
         with:
           who-to-greet: 'Shibu'
 
