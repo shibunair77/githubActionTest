@@ -30,7 +30,7 @@ jobs:
     steps:        
       - name: Custom action from same repo
         id: custom-github-action-same-repo
-        uses: "/.github/actions/greeting"
+        uses: "./.github/actions/greeting"
         with:
           who-to-greet: 'Shibu'
 
