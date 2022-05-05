@@ -33,6 +33,6 @@ jobs:
           ls -al /home/runner/work/githubActionTest/githubActionTest/./.github/actions/greeting
       - name: Custom action from same repo
         id: custom-github-action-same-repo
-        uses: ./.github/actions/greeting
+        uses: shibunair77/githubActionTest/greeting@main
 
    
